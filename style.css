@@ -1,0 +1,841 @@
+@font-face {
+    font-family: "KaushanScript";
+    src: url("fonts/KaushanScript-Regular.woff2") format("woff2"), url("fonts/KaushanScript-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: "Cartoonist";
+    src: url("fonts/SFCartoonistHand.woff2") format("woff2"), url("fonts/SFCartoonistHand.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*General styles*/
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 6180px;
+    width: 1920px;
+    background: linear-gradient(#49fc76, #4e00de);
+}
+
+audio {
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 5%;
+}
+
+/*Header styles*/
+
+.header {
+    font-family: 'KaushanScript', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 0.7em;
+    text-align: center;
+    color: #4e00de;
+    height: 250px;
+
+}
+
+.header-content {
+    margin-left: 30%;
+    display: flex;
+}
+
+.first_header__image {
+    margin-right: 50px;
+}
+
+.second_header__image {
+    margin-left: 50px;
+}
+
+/*Main-info section styles*/
+
+.main-info {
+    display: flex;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+.description {
+    font-size: 31px;
+    line-height: 1em;
+    margin-top: 100px;
+    margin-left: 20px;
+    font-family: 'Cartoonist', Arial, sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+.purple-text {
+    color: #4e00de;
+}
+
+/*Top-tracks section styles*/
+
+.top-tracks {
+    height: 2900px;
+    margin-top: 150px;
+}
+
+.top-tracks__tittle {
+    color: #4e00de;
+    font-family: 'KaushanScript', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.name {
+    background: white;
+    display: inline-block;
+    position: relative;
+    padding: 36.5px 300px;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+
+.name::before {
+    content: '';
+    width: 148px;
+    height: 148px;
+    background: white;
+    position: absolute;
+    left: -148px;
+    top: 0;
+}
+
+.name::after {
+    content: '';
+    background: white;
+    width: 83px;
+    height: 83px;
+    border-radius: 10px;
+    position: absolute;
+    right: -40px;
+    transform: rotate(45deg);
+    top: 13.5px;
+    z-index: -1;
+}
+
+.name__plaster {
+    color: #4e00de;
+    font-size: 25px;
+    font-family: 'KaushanScript', Arial, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.song {
+    margin-top: 70px;
+}
+
+.track {
+    display: flex;
+}
+
+.fragment {
+    margin-left: 18%;
+    font-family: 'Cartoonist', Arial, sans-serif;
+    font-weight: 400;
+    color: #ffea00;
+    font-size: 37.5px;
+    line-height: 0.5em;
+}
+
+/*Albums-n-singles section styles*/
+
+.albums-and-singles {
+    margin-top: 100px;
+    height: 600px;
+    display: flex;
+    font-family: 'Cartoonist', Arial, sans-serif;
+    font-weight: 400;
+    color: #49fc76;
+    margin-left: 1%;
+}
+
+.albums-and-singles__tittle {
+    text-align: center;
+    font-family: 'KaushanScript', Arial, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #49fc76;
+    margin-top: 700px;
+    font-size: 42px;
+}
+
+.album {
+    text-align: center;
+    font-size: 27px;
+    margin-left: 1%;
+}
+
+
+/*Footer styles*/
+
+.contacts {
+    margin-top: 180px;
+    height: 500px;
+}
+
+.social-media__tittle {
+    font-family: 'KaushanScript', Arial, sans-serif;
+    font-weight: 400;
+    color: #49fc76;
+    font-size: 50px;
+    text-align: left;
+}
+
+.link {
+    font-size: 35px;
+    color: #49fc76;
+    display: block;
+    text-decoration: none;
+    font-family: 'Cartoonist', Arial, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    text-align: left;
+}
+
+.author {
+    font-family: 'KaushanScript', Arial, sans-serif;
+    font-weight: 400;
+    color: #49fc76;
+    font-size: 50px;
+    text-align: left;
+    margin-top: 100px;
+}
+
+.map {
+    margin-left: 55%;
+    margin-top: -600px;
+}
+
+/*Adaptive*/
+
+@media (min-width: 321px) and (max-width: 480px) {
+
+    body {
+        height: 7850px;
+        width: 480px;
+    }
+    
+    audio {
+        width: 300px;
+        margin-top: 10px;
+        margin-left: 10px;
+        position: absolute;
+    }
+    
+    .header {
+        font-size: 19.5px;
+        line-height: 0.5em;
+        margin-top: 20px;
+    }
+
+    .header-content {
+        margin-left: 75px;
+    }
+    
+    .first_header__image {
+        margin-right: 10px;
+        position: absolute;
+        margin-top: 160px;
+    }
+    
+    .second_header__image {
+        margin-left: 210px;
+        position: absolute;
+        margin-top: 160px;
+    }
+    
+    .info-image {
+        display: none;
+    }
+
+    .main-info {
+        display: flex;
+        margin-top: 60px;
+        margin-left: 5px;
+    }
+    
+    .description {
+        font-size: 28px;
+        line-height: 0.75em;
+        margin-top: 100px;
+        margin-left: 1px;
+        position: absolute;
+        text-align: center;
+    }
+    
+    .top-tracks {
+        height: 2900px;
+        margin-top: 550px;
+    }
+
+    .top-tracks__tittle {
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    
+    .name {
+        padding: 16.5px 50px;
+        z-index: 2;
+        margin-bottom: 10px;
+    }
+
+    .name::after {
+        width: 54px;
+        height: 54px;
+        border-radius: 10px;
+        position: absolute;
+        right: -27px;
+        transform: rotate(45deg);
+        top: 8px;
+        z-index: -1;
+    }
+    
+    .song {
+        margin-top: 40px;
+    }
+    
+    .track {
+        display: inline-block;
+    }
+    
+    .fragment {
+        position: relative;
+        margin-top: 80px;
+        margin-left: 1px;
+        font-size: 32px;
+        line-height: 0.8em;
+        text-align: center;
+        width: 420px;
+    }
+    
+    .albums-and-singles {
+        margin-top: 20px;
+        height: 2700px;
+        display: inline-block;
+    }
+    
+    .albums-and-singles__tittle {
+        margin-top: 250px;
+        font-size: 40px;
+        width: 440px;
+    }
+    
+    .album {
+        text-align: center;
+        font-size: 27px;
+        margin-left: 20px;
+        margin-top: 130px;
+    }
+
+    .contacts {
+        margin-top: 80px;
+        height: 750px;
+        margin-left: 20px;
+    }
+    
+    .social-media__tittle {
+        font-size: 30px;
+        text-align: left;
+    }
+    
+    .link {
+        font-size: 25px;
+        text-align: left;
+    }
+    
+    .author {
+        width: 460px;
+        font-size: 30px;
+        text-align: left;
+        margin-top: 30px;
+    }
+
+    .map {
+        margin-left: 1%;
+        margin-top: 50px;
+        height: 400px;
+        width: 400px;
+    }
+    
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        height: 7500px;
+        width: 768px;
+    }
+    
+    audio {
+        width: 300px;
+        margin-top: 10px;
+        margin-left: 10px;
+        position: absolute;
+    }
+    
+    .header {
+        font-size: 21.5px;
+        line-height: 0.5em;
+        margin-top: 20px;
+    }
+
+    .header-content {
+        margin-left: 105px;
+    }
+    
+    .first_header__image {
+        margin-right: 20px;
+        position: absolute;
+        margin-top: 170px;
+    }
+    
+    .second_header__image {
+        margin-left: 230px;
+        position: absolute;
+        margin-top: 170px;
+    }
+    
+    .info-image {
+        display: none;
+    }
+
+    .main-info {
+        display: flex;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+    
+    .description {
+        font-size: 28px;
+        line-height: 0.75em;
+        margin-top: 100px;
+        margin-left: 1px;
+        position: absolute;
+        text-align: center;
+    }
+    
+    .top-tracks {
+        height: 2900px;
+        margin-top: 550px;
+        position: absolute;
+    }
+
+    .top-tracks__tittle {
+        font-size: 35px;
+        margin-bottom: 50px;
+        width: 500px;
+        margin-left: 20px;
+    }
+    
+    .name {
+        padding: 18.5px 55px;
+        z-index: 2;
+        margin-bottom: 10px;
+    }
+    
+    .name::after {
+        width: 57.5px;
+        height: 57.5px;
+        border-radius: 10px;
+        position: absolute;
+        right: -27px;
+        transform: rotate(45deg);
+        top: 8px;
+        z-index: -1;
+    }
+    
+    .song {
+        margin-top: 55px;
+    }
+    
+    .track {
+        display: inline-block;
+    }
+    
+    .fragment {
+        position: relative;
+        margin-top: 90px;
+        margin-left: 1px;
+        font-size: 32px;
+        line-height: 0.7em;
+        text-align: center;
+        width: 510px;
+    }
+    
+    .albums-and-singles {
+        margin-top: 10px;
+        height: 2600px;
+        display: inline-block;
+    }
+    
+    .albums-and-singles__tittle {
+        margin-top: 3520px;
+        font-size: 40px;
+        width: 470px;
+        margin-left: 33px;
+    }
+    
+    .album {
+        text-align: center;
+        font-size: 27px;
+        margin-left: 50px;
+        margin-top: 60px;
+    }
+    
+    .contacts {
+        margin-top: 80px;
+        height: 780px;
+        margin-left: 40px;
+    }
+    
+    .social-media__tittle {
+        font-size: 30px;
+        text-align: left;
+    }
+    
+    .link {
+        font-size: 25px;
+        text-align: left;
+    }
+    
+    .author {
+        width: 480px;
+        font-size: 30px;
+        text-align: left;
+        margin-top: 30px;
+    }
+
+    .map {
+        margin-left: 1.5%;
+        margin-top: 50px;
+        height: 420px;
+        width: 420px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    body {
+        height: 7450px;
+        width: 992px;
+    }
+    
+    audio {
+        width: 500px;
+        margin-top: 50px;
+        margin-left: -230px;
+        position: absolute;
+    }
+    
+    .header {
+        font-size: 21.5px;
+        line-height: 0.5em;
+        margin-top: 20px;
+    }
+
+    .header-content {
+        margin-left: 300px;
+    }
+    
+    .first_header__image {
+        margin-right: 20px;
+        position: absolute;
+        margin-top: 180px;
+    }
+    
+    .second_header__image {
+        margin-left: 250px;
+        position: absolute;
+        margin-top: 180px;
+    }
+    
+    .info-image {
+        display: none;
+    }
+
+    .main-info {
+        display: flex;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+    
+    .description {
+        width: 850px;
+        font-size: 30px;
+        line-height: 0.75em;
+        margin-top: 100px;
+        margin-left: 1px;
+        position: absolute;
+        text-align: center;
+    }
+    
+    .top-tracks {
+        height: 2900px;
+        margin-top: 450px;
+        position: absolute;
+    }
+
+    .top-tracks__tittle {
+        font-size: 35px;
+        margin-bottom: 50px;
+        width: 800px;
+        margin-left: 20px;
+    }
+    
+    .name {
+        padding: 18.5px 210px;
+        z-index: 2;
+        margin-bottom: 10px;
+    }
+    
+    .name::after {
+        width: 57.5px;
+        height: 57.5px;
+        border-radius: 10px;
+        position: absolute;
+        right: -27px;
+        transform: rotate(45deg);
+        top: 8px;
+        z-index: -1;
+    }
+    
+    .song {
+        margin-top: 55px;
+        height: 400px;
+    }
+    
+    .track {
+        display: inline-block;
+        margin-left: -310px;
+    }
+    
+    .fragment {
+        position: absolute;
+        margin-top: 90px;
+        margin-left: -232px;
+        font-size: 32px;
+        line-height: 0.7em;
+        text-align: center;
+    }
+    
+    .albums-and-singles {
+        margin-top: 10px;
+        height: 2600px;
+        display: inline-block;
+    }
+    
+    .albums-and-singles__tittle {
+        margin-top: 3300px;
+        font-size: 40px;
+        width: 900px;
+    }
+    
+    .album {
+        text-align: center;
+        font-size: 27px;
+        margin-left: 50px;
+        margin-top: 100px;
+        width: 810px;
+    }
+ 
+    .contacts {
+        margin-top: 80px;
+        height: 1000px;
+        margin-left: 70px;
+    }
+    
+    .social-media__tittle {
+        font-size: 40px;
+        text-align: left;
+    }
+    
+    .link {
+        font-size: 27.5px;
+        text-align: left;
+    }
+    
+    .author {
+        width: 600px;
+        font-size: 40px;
+        text-align: left;
+        margin-top: 30px;
+    }
+
+    .map {
+        margin-left: 1%;
+        margin-top: 50px;
+        height: 520px;
+        width: 720px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    body {
+        height: 8100px;
+        width: 1200px;
+    }
+    
+    audio {
+        width: 500px;
+        margin-top: 50px;
+        margin-left: -365px;
+        position: absolute;
+    }
+    
+    .header {
+        font-size: 23px;
+        line-height: 0.5em;
+        margin-top: 20px;
+    }
+
+    .header-content {
+        margin-left: 400px;
+    }
+    
+    .first_header__image {
+        margin-right: 20px;
+        position: absolute;
+        margin-top: 200px;
+    }
+    
+    .second_header__image {
+        margin-left: 250px;
+        position: absolute;
+        margin-top: 200px;
+    }
+    
+    .info-image {
+        display: none;
+    }
+
+    .main-info {
+        display: flex;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+    
+    .description {
+        width: 1120px;
+        font-size: 30px;
+        line-height: 0.75em;
+        margin-top: 150px;
+        margin-left: 1px;
+        position: absolute;
+        text-align: center;
+    }
+    
+    .top-tracks {
+        height: 2900px;
+        margin-top: 450px;
+        position: absolute;
+    }
+
+    .top-tracks__tittle {
+        font-size: 40px;
+        margin-bottom: 50px;
+        width: 1100px;
+        margin-left: 20px;
+        margin-top: 100px;
+    }
+    
+    .name {
+        padding: 25px 280px;
+        z-index: 2;
+        margin-bottom: 10px;
+    }
+    
+    .name::after {
+        width: 66.5px;
+        height: 66.5px;
+        border-radius: 10px;
+        position: absolute;
+        right: -32px;
+        transform: rotate(45deg);
+        top: 10px;
+        z-index: -1;
+    }
+    
+    .song {
+        margin-top: 55px;
+        height: 450px;
+    }
+    
+    .track {
+        display: inline-block;
+        margin-left: -310px;
+    }
+    
+    .fragment {
+        position: absolute;
+        margin-top: 120px;
+        margin-left: -350px;
+        font-size: 35px;
+        line-height: 0.7em;
+        text-align: center;
+    }
+    
+    .albums-and-singles {
+        margin-top: 10px;
+        height: 2600px;
+        display: inline-block;
+    }
+    
+    .albums-and-singles__tittle {
+        margin-top: 3700px;
+        font-size: 40px;
+        width: 1100px;
+    }
+    
+    .album {
+        text-align: center;
+        font-size: 35px;
+        margin-left: 50px;
+        margin-top: 70px;
+        width: 1000px;
+    }
+
+    .contacts {
+        margin-top: 80px;
+        height: 1100px;
+        margin-left: 100px;
+    }
+    
+    .social-media__tittle {
+        font-size: 45px;
+        text-align: left;
+    }
+    
+    .link {
+        font-size: 30px;
+        text-align: left;
+    }
+    
+    .author {
+        width: 600px;
+        font-size: 45px;
+        text-align: left;
+        margin-top: 30px;
+    }
+
+    .map {
+        margin-left: 3%;
+        margin-top: 50px;
+        height: 600px;
+        width: 900px;
+    }
+}
+
