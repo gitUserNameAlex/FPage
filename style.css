@@ -17,14 +17,13 @@
 body {
     margin: 0;
     padding: 0;
-    height: 6180px;
-    width: 1920px;
+    height: 5100px;
     background: linear-gradient(#49fc76, #4e00de);
 }
 
 audio {
-    width: 500px;
-    margin-top: 50px;
+    width: 350px;
+    margin-top: 5%;
     margin-left: 5%;
 }
 
@@ -33,38 +32,51 @@ audio {
 .header {
     font-family: 'KaushanScript', Arial, sans-serif;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 0.7em;
-    text-align: center;
+    font-size: 20px;
+    line-height: 0.6em;
     color: #4e00de;
-    height: 250px;
-
+    height: 150px;
 }
 
-.header-content {
-    margin-left: 30%;
-    display: flex;
+
+.page-tittle {
+    text-align: center;
 }
 
-.first_header__image {
-    margin-right: 50px;
+.link {
+    font-size: 20px;
+    color: #4e00de;
+    display: block;
+    text-decoration: none;
+    font-family: 'Cartoonist', Arial, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    text-align: right;
+    margin-right: 2%;
+    margin-top: 2%;
 }
 
-.second_header__image {
-    margin-left: 50px;
+.author {
+    font-family: 'KaushanScript', Arial, sans-serif;
+    font-weight: 400;
+    color: #4e00de;
+    font-size: 23.5px;
+    text-align: right;
+    margin-top: -7%;
+    margin-right: 2%;
 }
 
 /*Main-info section styles*/
 
 .main-info {
     display: flex;
-    margin-top: 70px;
-    margin-left: 50px;
+    margin-top: 1%;
 }
 
 .description {
-    font-size: 31px;
-    line-height: 1em;
+    font-size: 25px;
+    line-height: 0.8em;
     margin-top: 100px;
     margin-left: 20px;
     font-family: 'Cartoonist', Arial, sans-serif;
@@ -72,32 +84,45 @@ audio {
     color: black;
 }
 
+.mobile-description {
+    display: none;
+}
+
 .purple-text {
     color: #4e00de;
+}
+
+.producer {
+    font-family: 'Cartoonist', Arial, sans-serif;
+    font-weight: 400;
+    color: #4e00de;
+    position: relative;
+    text-align: center;
+    margin-top: 15%;
+    font-size: 35px;
 }
 
 /*Top-tracks section styles*/
 
 .top-tracks {
-    height: 2900px;
-    margin-top: 150px;
+    margin-top: 7%;
 }
 
 .top-tracks__tittle {
     color: #4e00de;
     font-family: 'KaushanScript', Arial, sans-serif;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 32px;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 150px;
+
 }
 
 .name {
     background: white;
     display: inline-block;
     position: relative;
-    padding: 36.5px 300px;
+    padding: 30px 200px;
     z-index: 2;
     margin-bottom: 50px;
 }
@@ -115,13 +140,13 @@ audio {
 .name::after {
     content: '';
     background: white;
-    width: 83px;
-    height: 83px;
+    width: 73.5px;
+    height: 73.5px;
     border-radius: 10px;
     position: absolute;
-    right: -40px;
+    right: -36px;
     transform: rotate(45deg);
-    top: 13.5px;
+    top: 11px;
     z-index: -1;
 }
 
@@ -131,7 +156,7 @@ audio {
     font-family: 'KaushanScript', Arial, sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
 }
 
 .song {
@@ -143,11 +168,11 @@ audio {
 }
 
 .fragment {
-    margin-left: 18%;
+    margin-left: 20%;
     font-family: 'Cartoonist', Arial, sans-serif;
     font-weight: 400;
     color: #ffea00;
-    font-size: 37.5px;
+    font-size: 32px;
     line-height: 0.5em;
 }
 
@@ -155,8 +180,6 @@ audio {
 
 .albums-and-singles {
     margin-top: 100px;
-    height: 600px;
-    display: flex;
     font-family: 'Cartoonist', Arial, sans-serif;
     font-weight: 400;
     color: #49fc76;
@@ -169,34 +192,37 @@ audio {
     font-weight: 400;
     text-transform: uppercase;
     color: #49fc76;
-    margin-top: 700px;
-    font-size: 42px;
+    font-size: 30px;
+}
+
+.albums {
+    display: flex;
+    margin-left: 3%;
 }
 
 .album {
     text-align: center;
     font-size: 27px;
-    margin-left: 1%;
+    margin-right: 2%;
 }
 
 
 /*Footer styles*/
 
 .contacts {
-    margin-top: 180px;
-    height: 500px;
+    margin-top: 10%;
 }
 
 .social-media__tittle {
     font-family: 'KaushanScript', Arial, sans-serif;
     font-weight: 400;
     color: #49fc76;
-    font-size: 50px;
+    font-size: 40px;
     text-align: left;
 }
 
-.link {
-    font-size: 35px;
+.footer-link {
+    font-size: 25px;
     color: #49fc76;
     display: block;
     text-decoration: none;
@@ -207,635 +233,575 @@ audio {
     text-align: left;
 }
 
-.author {
-    font-family: 'KaushanScript', Arial, sans-serif;
-    font-weight: 400;
-    color: #49fc76;
-    font-size: 50px;
-    text-align: left;
-    margin-top: 100px;
-}
-
 .map {
-    margin-left: 55%;
-    margin-top: -600px;
+    margin-left: 50%;
+    margin-top: -15%; 
+    width: 500px;
+    height: 400px;
 }
 
 /*Adaptive*/
 
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 1px) and (max-width: 320px) { /******5********/
 
     body {
-        height: 7850px;
-        width: 480px;
+        height: 4800px;
+        max-width: 320px;
     }
     
     audio {
-        width: 300px;
-        margin-top: 10px;
-        margin-left: 10px;
-        position: absolute;
+        width: 270px;
+        height: 30px;
+        margin-top: -10%;
+        margin-left: 2%;
     }
     
     .header {
-        font-size: 19.5px;
+        font-size: 11px;
         line-height: 0.5em;
-        margin-top: 20px;
-    }
-
-    .header-content {
-        margin-left: 75px;
+        height: 150px;
     }
     
-    .first_header__image {
-        margin-right: 10px;
-        position: absolute;
-        margin-top: 160px;
+    .link {
+        font-size: 20px;
+        text-align: left;
+        margin-top: 5%;
+        margin-left: 3%;
     }
     
-    .second_header__image {
-        margin-left: 210px;
-        position: absolute;
-        margin-top: 160px;
+    .author {
+        font-size: 16px;
+        text-align: left;
+        margin-top: 12%;
+        margin-left: 3%;
     }
     
     .info-image {
         display: none;
     }
 
-    .main-info {
-        display: flex;
-        margin-top: 60px;
-        margin-left: 5px;
-    }
-    
     .description {
-        font-size: 28px;
-        line-height: 0.75em;
-        margin-top: 100px;
-        margin-left: 1px;
-        position: absolute;
+        display: none;
+    }
+
+    .mobile-description {
+        display: block;
+        font-family: 'Cartoonist', Arial, sans-serif;
+        font-weight: 400;
+        font-size: 17px;
         text-align: center;
+    }
+
+    .producer {
+        text-align: center;
+        margin-top: 10%;
+        font-size: 24px;
     }
     
     .top-tracks {
-        height: 2900px;
-        margin-top: 550px;
+        margin-top: 5%;
     }
-
+    
     .top-tracks__tittle {
-        font-size: 35px;
-        margin-bottom: 50px;
+        font-size: 19px;
     }
     
     .name {
-        padding: 16.5px 50px;
-        z-index: 2;
-        margin-bottom: 10px;
+        padding: 10px 25px;
+        margin-bottom: 50px;
+        white-space: nowrap;
     }
-
+    
     .name::after {
-        width: 54px;
-        height: 54px;
-        border-radius: 10px;
-        position: absolute;
-        right: -27px;
-        transform: rotate(45deg);
-        top: 8px;
-        z-index: -1;
+        width: 39px;
+        height: 39px;
+        right: -21.5px;
+        top: 4px;
+
+    }
+    
+    .name__plaster {
+        font-size: 18px;
     }
     
     .song {
-        margin-top: 40px;
+        margin-top: 15%;
     }
     
     .track {
-        display: inline-block;
+        display: block;
     }
     
     .fragment {
-        position: relative;
-        margin-top: 80px;
-        margin-left: 1px;
-        font-size: 32px;
+        font-size: 18px;
         line-height: 0.8em;
+        margin-top: 8%;
+        margin-left: 3%;
         text-align: center;
-        width: 420px;
     }
     
     .albums-and-singles {
-        margin-top: 20px;
-        height: 2700px;
-        display: inline-block;
+        margin-top: 50px;
+        color: #49fc76;
     }
     
     .albums-and-singles__tittle {
-        margin-top: 250px;
-        font-size: 40px;
-        width: 440px;
+        color: #49fc76;
+        font-size: 20px;
+    }
+    
+    .albums {
+        display: block;
+        margin-left: -2.5%;
     }
     
     .album {
-        text-align: center;
-        font-size: 27px;
-        margin-left: 20px;
-        margin-top: 130px;
+        font-size: 19px;
     }
 
     .contacts {
-        margin-top: 80px;
-        height: 750px;
-        margin-left: 20px;
+        margin-top: 6%;
     }
     
     .social-media__tittle {
-        font-size: 30px;
-        text-align: left;
+        font-size: 21px;
+        margin-left: 2%;
+    }
+    
+    .footer-link {
+        margin-left: 2%;
+        font-size: 20px;
+        color: #49fc76;
+        display: block;
+    }
+    
+    .map {
+        margin-left: 6.5%;
+        margin-top: 7%; 
+        width: 260px;
+        height: 260px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) { /******S6********/
+
+    body {
+        height: 5250px;
+        max-width: 480px;
+    }
+    
+    audio {
+        width: 300px;
+        height: 30px;
+        margin-top: -10%;
+        margin-left: 4%;
+    }
+    
+    .header {
+        font-size: 14px;
+        line-height: 0.5em;
+        height: 200px;
     }
     
     .link {
-        font-size: 25px;
+        font-size: 20px;
         text-align: left;
+        margin-top: 5%;
+        margin-left: 3.5%;
     }
     
     .author {
-        width: 460px;
-        font-size: 30px;
+        font-size: 18px;
         text-align: left;
-        margin-top: 30px;
-    }
-
-    .map {
-        margin-left: 1%;
-        margin-top: 50px;
-        height: 400px;
-        width: 400px;
+        margin-top: 18%;
+        margin-left: 3.5%;
     }
     
+    .info-image {
+        display: none;
+    }
 
+    .description {
+        display: none;
+    }
+
+    .mobile-description {
+        display: block;
+        font-family: 'Cartoonist', Arial, sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .producer {
+        text-align: center;
+        margin-top: 10%;
+        font-size: 24px;
+    }
+    
+    .top-tracks {
+        margin-top: 5%;
+    }
+    
+    .top-tracks__tittle {
+        font-size: 25px;
+    }
+    
+    .name {
+        padding: 10px 45px;
+        margin-bottom: 50px;
+        white-space: nowrap;
+    }
+    
+    .name::after {
+        width: 39px;
+        height: 39px;
+        right: -21.5px;
+        top: 4px;
+
+    }
+    
+    .name__plaster {
+        font-size: 18px;
+    }
+    
+    .song {
+        margin-top: 20%;
+    }
+    
+    .track {
+        display: block;
+    }
+    
+    .fragment {
+        font-size: 20px;
+        line-height: 0.8em;
+        margin-top: 8%;
+        margin-left: 1%;
+        text-align: center;
+    }
+    
+    .albums-and-singles {
+        margin-top: 50px;
+        color: #49fc76;
+    }
+    
+    .albums-and-singles__tittle {
+        color: #49fc76;
+        font-size: 27px;
+    }
+    
+    .albums {
+        display: block;
+        margin-left: 1%;
+    }
+    
+    .album {
+        font-size: 19px;
+    }
+
+    .contacts {
+        margin-top: 6%;
+    }
+    
+    .social-media__tittle {
+        font-size: 24px;
+    }
+    
+    .footer-link {
+        font-size: 20px;
+        color: #49fc76;
+        display: block;
+    }
+    
+    .map {
+        margin-left: 7%;
+        margin-top: 10%; 
+        width: 300px;
+        height: 300px;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
     body {
-        height: 7500px;
-        width: 768px;
+        height: 5850px;
+        max-width: 768px;
     }
     
     audio {
-        width: 300px;
-        margin-top: 10px;
-        margin-left: 10px;
-        position: absolute;
+        width: 310px;
+        height: 40px;
+        margin-top: -10%;
+        margin-left: 1%;
     }
     
     .header {
-        font-size: 21.5px;
+        font-size: 17px;
         line-height: 0.5em;
-        margin-top: 20px;
-    }
-
-    .header-content {
-        margin-left: 105px;
+        height: 200px;
     }
     
-    .first_header__image {
-        margin-right: 20px;
-        position: absolute;
-        margin-top: 170px;
+    .link {
+        font-size: 22px;
+        text-align: left;
+        margin-top: 3%;
+        margin-left: 3.5%;
     }
     
-    .second_header__image {
-        margin-left: 230px;
-        position: absolute;
-        margin-top: 170px;
+    .author {
+        font-size: 25px;
+        text-align: left;
+        margin-top: 7%;
+        margin-left: 3.5%;
     }
     
     .info-image {
         display: none;
     }
 
-    .main-info {
-        display: flex;
-        margin-top: 50px;
-        margin-left: 10px;
-    }
-    
     .description {
-        font-size: 28px;
-        line-height: 0.75em;
-        margin-top: 100px;
-        margin-left: 1px;
-        position: absolute;
+        font-size: 20px;
+        line-height: 0.7em;
+        margin-top: 20px;
+        width: 760px;
+        text-align: left;
+        margin-left: 1%;
+    }
+
+    .mobile-description {
+        display: none;
+    }
+
+    .producer {
         text-align: center;
+        margin-top: 6%;
+        font-size: 28px;
     }
     
     .top-tracks {
-        height: 2900px;
-        margin-top: 550px;
-        position: absolute;
+        margin-top: 3.5%;
     }
-
+    
     .top-tracks__tittle {
-        font-size: 35px;
-        margin-bottom: 50px;
-        width: 500px;
-        margin-left: 20px;
+        font-size: 27px;
     }
     
     .name {
-        padding: 18.5px 55px;
-        z-index: 2;
-        margin-bottom: 10px;
+        padding: 10px 90px;
+        margin-bottom: 50px;
+        white-space: nowrap;
     }
     
     .name::after {
-        width: 57.5px;
-        height: 57.5px;
-        border-radius: 10px;
-        position: absolute;
-        right: -27px;
-        transform: rotate(45deg);
-        top: 8px;
-        z-index: -1;
+        width: 39px;
+        height: 39px;
+        right: -21.5px;
+        top: 4px;
+
+    }
+    
+    .name__plaster {
+        font-size: 18px;
     }
     
     .song {
-        margin-top: 55px;
+        margin-top: 10%;
     }
     
     .track {
-        display: inline-block;
+        display: block;
     }
     
     .fragment {
-        position: relative;
-        margin-top: 90px;
-        margin-left: 1px;
-        font-size: 32px;
-        line-height: 0.7em;
+        font-size: 27px;
+        line-height: 0.8em;
+        margin-top: 8%;
+        margin-left: 1%;
         text-align: center;
-        width: 510px;
+        margin-right: 2%;
     }
     
     .albums-and-singles {
-        margin-top: 10px;
-        height: 2600px;
-        display: inline-block;
+        margin-top: 75px;
+        color: #49fc76;
     }
     
     .albums-and-singles__tittle {
-        margin-top: 3520px;
-        font-size: 40px;
-        width: 470px;
-        margin-left: 33px;
+        color: #49fc76;
+        font-size: 28px;
+    }
+    
+    .albums {
+        display: block;
+        margin-left: 1%;
     }
     
     .album {
-        text-align: center;
-        font-size: 27px;
-        margin-left: 50px;
-        margin-top: 60px;
+        font-size: 25px;
+        margin-top: 55px;
     }
-    
+
     .contacts {
-        margin-top: 80px;
-        height: 780px;
-        margin-left: 40px;
+        margin-top: 3%;
     }
     
     .social-media__tittle {
-        font-size: 30px;
-        text-align: left;
+        font-size: 35px;
+        margin-left: 4%;
     }
     
-    .link {
+    .footer-link {
         font-size: 25px;
-        text-align: left;
+        color: #49fc76;
+        display: block;
+        margin-left: 4%;
     }
     
-    .author {
-        width: 480px;
-        font-size: 30px;
-        text-align: left;
-        margin-top: 30px;
-    }
-
     .map {
-        margin-left: 1.5%;
-        margin-top: 50px;
-        height: 420px;
-        width: 420px;
+        margin-left: 13%;
+        margin-top: 5%; 
+        width: 500px;
+        height: 375px;
     }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
     body {
-        height: 7450px;
-        width: 992px;
+        height: 5800px;
+        max-width: 768px;
     }
     
     audio {
-        width: 500px;
-        margin-top: 50px;
-        margin-left: -230px;
-        position: absolute;
-    }
-    
-    .header {
-        font-size: 21.5px;
-        line-height: 0.5em;
-        margin-top: 20px;
-    }
-
-    .header-content {
-        margin-left: 300px;
-    }
-    
-    .first_header__image {
-        margin-right: 20px;
-        position: absolute;
-        margin-top: 180px;
-    }
-    
-    .second_header__image {
-        margin-left: 250px;
-        position: absolute;
-        margin-top: 180px;
-    }
-    
-    .info-image {
-        display: none;
-    }
-
-    .main-info {
-        display: flex;
-        margin-top: 50px;
-        margin-left: 10px;
-    }
-    
-    .description {
-        width: 850px;
-        font-size: 30px;
-        line-height: 0.75em;
-        margin-top: 100px;
-        margin-left: 1px;
-        position: absolute;
-        text-align: center;
-    }
-    
-    .top-tracks {
-        height: 2900px;
-        margin-top: 450px;
-        position: absolute;
-    }
-
-    .top-tracks__tittle {
-        font-size: 35px;
-        margin-bottom: 50px;
-        width: 800px;
-        margin-left: 20px;
-    }
-    
-    .name {
-        padding: 18.5px 210px;
-        z-index: 2;
-        margin-bottom: 10px;
-    }
-    
-    .name::after {
-        width: 57.5px;
-        height: 57.5px;
-        border-radius: 10px;
-        position: absolute;
-        right: -27px;
-        transform: rotate(45deg);
-        top: 8px;
-        z-index: -1;
-    }
-    
-    .song {
-        margin-top: 55px;
-        height: 400px;
-    }
-    
-    .track {
-        display: inline-block;
-        margin-left: -310px;
-    }
-    
-    .fragment {
-        position: absolute;
-        margin-top: 90px;
-        margin-left: -232px;
-        font-size: 32px;
-        line-height: 0.7em;
-        text-align: center;
-    }
-    
-    .albums-and-singles {
-        margin-top: 10px;
-        height: 2600px;
-        display: inline-block;
-    }
-    
-    .albums-and-singles__tittle {
-        margin-top: 3300px;
-        font-size: 40px;
-        width: 900px;
-    }
-    
-    .album {
-        text-align: center;
-        font-size: 27px;
-        margin-left: 50px;
-        margin-top: 100px;
-        width: 810px;
-    }
- 
-    .contacts {
-        margin-top: 80px;
-        height: 1000px;
-        margin-left: 70px;
-    }
-    
-    .social-media__tittle {
-        font-size: 40px;
-        text-align: left;
-    }
-    
-    .link {
-        font-size: 27.5px;
-        text-align: left;
-    }
-    
-    .author {
-        width: 600px;
-        font-size: 40px;
-        text-align: left;
-        margin-top: 30px;
-    }
-
-    .map {
+        width: 280px;
+        height: 40px;
+        margin-top: -10%;
         margin-left: 1%;
-        margin-top: 50px;
-        height: 520px;
-        width: 720px;
-    }
-}
-
-@media (min-width: 993px) and (max-width: 1200px) {
-    body {
-        height: 8100px;
-        width: 1200px;
-    }
-    
-    audio {
-        width: 500px;
-        margin-top: 50px;
-        margin-left: -365px;
-        position: absolute;
     }
     
     .header {
-        font-size: 23px;
+        font-size: 16px;
         line-height: 0.5em;
-        margin-top: 20px;
-    }
-
-    .header-content {
-        margin-left: 400px;
+        height: 200px;
     }
     
-    .first_header__image {
-        margin-right: 20px;
-        position: absolute;
-        margin-top: 200px;
+    .link {
+        font-size: 20px;
+        text-align: left;
+        margin-top: 3%;
+        margin-left: 3.5%;
     }
     
-    .second_header__image {
-        margin-left: 250px;
-        position: absolute;
-        margin-top: 200px;
+    .author {
+        font-size: 23px;
+        text-align: left;
+        margin-top: 8%;
+        margin-left: 3.5%;
     }
     
     .info-image {
         display: none;
     }
 
-    .main-info {
-        display: flex;
-        margin-top: 50px;
-        margin-left: 10px;
-    }
-    
     .description {
-        width: 1120px;
-        font-size: 30px;
-        line-height: 0.75em;
-        margin-top: 150px;
-        margin-left: 1px;
-        position: absolute;
+        font-size: 20px;
+        line-height: 0.7em;
+        margin-top: 20px;
+        width: 560px;
+    }
+
+    .mobile-description {
+        display: none;
+    }
+
+    .producer {
         text-align: center;
+        margin-top: 10%;
+        font-size: 24px;
     }
     
     .top-tracks {
-        height: 2900px;
-        margin-top: 450px;
-        position: absolute;
+        margin-top: 5%;
     }
-
+    
     .top-tracks__tittle {
-        font-size: 40px;
-        margin-bottom: 50px;
-        width: 1100px;
-        margin-left: 20px;
-        margin-top: 100px;
+        font-size: 27px;
     }
     
     .name {
-        padding: 25px 280px;
-        z-index: 2;
-        margin-bottom: 10px;
+        padding: 10px 90px;
+        margin-bottom: 50px;
+        white-space: nowrap;
     }
     
     .name::after {
-        width: 66.5px;
-        height: 66.5px;
-        border-radius: 10px;
-        position: absolute;
-        right: -32px;
-        transform: rotate(45deg);
-        top: 10px;
-        z-index: -1;
+        width: 39px;
+        height: 39px;
+        right: -21.5px;
+        top: 4px;
+
+    }
+    
+    .name__plaster {
+        font-size: 18px;
     }
     
     .song {
-        margin-top: 55px;
-        height: 450px;
+        margin-top: 10%;
     }
     
     .track {
-        display: inline-block;
-        margin-left: -310px;
+        display: block;
     }
     
     .fragment {
-        position: absolute;
-        margin-top: 120px;
-        margin-left: -350px;
-        font-size: 35px;
-        line-height: 0.7em;
-        text-align: center;
+        font-size: 24px;
+        line-height: 0.8em;
+        margin-top: 8%;
+        margin-left: 1%;
+        text-align: right;
+        margin-right: 2%;
     }
     
     .albums-and-singles {
-        margin-top: 10px;
-        height: 2600px;
-        display: inline-block;
+        margin-top: 50px;
+        color: #49fc76;
     }
     
     .albums-and-singles__tittle {
-        margin-top: 3700px;
-        font-size: 40px;
-        width: 1100px;
+        color: #49fc76;
+        font-size: 25px;
+    }
+    
+    .albums {
+        display: block;
+        margin-left: 1%;
     }
     
     .album {
-        text-align: center;
-        font-size: 35px;
-        margin-left: 50px;
-        margin-top: 70px;
-        width: 1000px;
+        font-size: 23px;
+        margin-top: 50px;
     }
 
     .contacts {
-        margin-top: 80px;
-        height: 1100px;
-        margin-left: 100px;
+        margin-top: 5%;
     }
     
     .social-media__tittle {
-        font-size: 45px;
-        text-align: left;
-    }
-    
-    .link {
-        font-size: 30px;
-        text-align: left;
-    }
-    
-    .author {
-        width: 600px;
-        font-size: 45px;
-        text-align: left;
-        margin-top: 30px;
-    }
-
-    .map {
+        font-size: 35px;
         margin-left: 3%;
-        margin-top: 50px;
-        height: 600px;
-        width: 900px;
     }
+    
+    .footer-link {
+        font-size: 25px;
+        color: #49fc76;
+        display: block;
+        margin-left: 3%;
+    }
+    
+    .map {
+        margin-left: 16.5%;
+        margin-top: 10%; 
+        width: 500px;
+        height: 320px;
+    } 
 }
-
