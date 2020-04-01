@@ -456,8 +456,8 @@ audio {
     .name::after {
         width: 39px;
         height: 39px;
-        right: -21.5px;
-        top: 4px;
+        right: -21px;
+        top: 3.5px;
 
     }
     
