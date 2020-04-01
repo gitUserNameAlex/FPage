@@ -206,6 +206,10 @@ audio {
     margin-right: 2%;
 }
 
+.album-tittle {
+    white-space: nowrap;
+}
+
 
 /*Footer styles*/
 
