@@ -197,13 +197,16 @@ audio {
 
 .albums {
     display: flex;
-    margin-left: 3%;
 }
 
 .album {
     text-align: center;
     font-size: 27px;
     margin-right: 2%;
+}
+
+.album-tittle {
+    white-space: nowrap;
 }
 
 
@@ -456,8 +459,8 @@ audio {
     .name::after {
         width: 39px;
         height: 39px;
-        right: -21.5px;
-        top: 4px;
+        right: -21px;
+        top: 3.5px;
 
     }
     
