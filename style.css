@@ -197,7 +197,7 @@ audio {
 
 .albums {
     display: flex;
-    margin-left: 3%;
+    margin-left: 0%;
 }
 
 .album {
