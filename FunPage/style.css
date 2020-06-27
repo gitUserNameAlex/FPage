@@ -197,10 +197,7 @@ audio {
 
 .albums {
     display: flex;
-<<<<<<< HEAD
-=======
     margin-left: 0%;
->>>>>>> b32c52ae31dd38327c18ecd9d067914c3d24545f
 }
 
 .album {
@@ -500,7 +497,7 @@ audio {
     
     .albums {
         display: block;
-        margin-left: 0%;
+        margin-left: 1%;
     }
     
     .album {
