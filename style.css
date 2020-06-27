@@ -496,7 +496,7 @@ audio {
     
     .albums {
         display: block;
-        margin-left: 1%;
+        margin-left: 0%;
     }
     
     .album {
